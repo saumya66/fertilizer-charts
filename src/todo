@@ -1,0 +1,17 @@
+v1
+- Add new page
+- Add react grid to make a box at top for table,and below two boxes
+- Top Wide box to contain an ag grid table
+- Below left box to contain graph 
+  - Selector for type of fertilizer
+  - Selector to see availability or requirement chart or both the charts vs months of year for the selected fertilizer
+  - Show the line graph using recharts.
+- Below right box to contain list of top fertilizers which have most req and top 5 fertilizers with least availablity
+
+- User should be able to drag and drop lists.
+- deploy on vercel
+
+v2
+- deploy on ec2 make the video
+- save grid configuration in localstorage 
+- add testing
