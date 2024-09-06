@@ -1,5 +1,5 @@
 v1
-- Add new page
+- Add new page 
 - Add react grid to make a box at top for table,and below two boxes
 - Top Wide box to contain an ag grid table
 - Below left box to contain graph 
@@ -10,7 +10,7 @@ v1
 
 - User should be able to drag and drop lists.
 - deploy on vercel
-
+- go through code to follow best practices
 v2
 - deploy on ec2 make the video
 - save grid configuration in localstorage 

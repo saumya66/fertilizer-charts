@@ -10,8 +10,8 @@ function Selector({ label, options, value, onChange, }) {
                 className='border p-2 mr-2'
             >
                 {options.map((option, index) => (
-                    <option key={index} value={option}>
-                        {option}
+                    <option key={index} value={option?.key ? option?.key : option}>
+                        {option?.name ? option?.name : option}
                     </option>
                 ))}
             </select>

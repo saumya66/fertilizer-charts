@@ -43,8 +43,6 @@ function Dashboard() {
         }
     })
 
-    const currAvailabilityData = filteredData?.map((each) => parseFloat(each?.availability_in_mt_))
-    const currRequrirementData = filteredData?.map((each) => parseFloat(each?.requirement_in_mt_))
     useEffect(() => {
         if (data.length) {
             const sampleRow = data[0]
@@ -100,7 +98,7 @@ function Dashboard() {
 
                     <Selector
                         label={"Plot Type"}
-                        options={uniqueFertilizerType}
+                        options={PlotTypes?.map((each) => each?.)}
                         value={selectedPlotType}
                         onChange={(e) => setSelectedPlotType(e.target.value)}
                     />
