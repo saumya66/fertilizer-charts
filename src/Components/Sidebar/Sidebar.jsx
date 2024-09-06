@@ -8,7 +8,7 @@ import {
 
 function Sidebar() {
   return (
-    <div className="flex-1 sticky bg-[#f5f5f5] h-[calc(100vh-60px)] max-w-[200px]">
+    <div className="flex-1 flex sticky bg-[#f5f5f5] min-h-[calc(100vh-60px)] h-full max-w-[200px]">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>

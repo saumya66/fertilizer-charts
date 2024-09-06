@@ -19,7 +19,6 @@ const renderCustomizedLabel = ({
     const x = cx + radius * Math.cos(-midAngle * RADIAN)
     const y = cy + radius * Math.sin(-midAngle * RADIAN)
     const percentage = (percent * 100).toFixed(1)
-    console.log(name, percentage, percent, parseFloat(percentage))
     return (
         <text
             x={x}
@@ -33,11 +32,9 @@ const renderCustomizedLabel = ({
         </text>
     )
 }
-// ${!percent ? "*" : `${name} - `}
-function NewPiechart({ data, title, dataKey, leastDataFirst = false, customColors = [] }) {
+function NewPiechart({ data, dataKey, leastDataFirst = false, customColors = [] }) {
     let chartData = getPieData(data, dataKey, leastDataFirst)
     let dataWithZeroValue = chartData?.filter((each) => !each?.value)
-    console.log(chartData)
     return (
         <>
             <ResponsiveContainer width={400} height={400}>
@@ -58,7 +55,7 @@ function NewPiechart({ data, title, dataKey, leastDataFirst = false, customColor
             </ResponsiveContainer>
             {
                 dataWithZeroValue?.length ?
-                    <p className="mr-auto">{`*${dataWithZeroValue?.map(each => each?.name).join(', ')} fertilizers lie in 0%`}</p>
+                    <p className="mr-auto pl-4">{`*${dataWithZeroValue?.map(each => each?.name).join(', ')} fertilizers lie in 0%`}</p>
                     : <></>
             }
         </>

@@ -10,10 +10,10 @@ import Dashboard from "./Pages/Dashboard/Dashboard"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Router>
         <Topbar />
-        <div className="flex ">
+        <div className="flex">
           <Sidebar />
           <Switch>
             <Route exact path="/">
