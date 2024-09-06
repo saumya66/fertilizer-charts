@@ -98,7 +98,7 @@ function Dashboard() {
 
                     <Selector
                         label={"Plot Type"}
-                        options={PlotTypes?.map((each) => each?.)}
+                        options={PlotTypes}
                         value={selectedPlotType}
                         onChange={(e) => setSelectedPlotType(e.target.value)}
                     />
