@@ -33,13 +33,13 @@ function Dashboard() {
                 rowHeight={600}
                 preventCollision={false}
                 isResizable={false}
-                isDraggable={false}
+                isDraggable={true}
             >
                 <div key="table"   >
                     <DataTableSection />
                 </div>
 
-                <div key="plot" >
+                <div key="plot" className='z-50'>
                     <PlotSection />
                 </div>
 
