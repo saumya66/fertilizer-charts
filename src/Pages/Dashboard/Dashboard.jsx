@@ -33,6 +33,7 @@ function Dashboard() {
                 rowHeight={600}
                 preventCollision={false}
                 isResizable={false}
+                isDraggable={false}
             >
                 <div key="table"   >
                     <DataTableSection />
