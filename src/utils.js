@@ -62,7 +62,6 @@ export function getPieData(data, valueData, leastDataFirst = false) {
 
     return carry
   }, {})
-  console.log(leastDataFirst, [...Object.entries(chartData)].sort((a, b) => leastDataFirst ? a[1] - b[1] : b[1] - a[1]))
 
   const finalData = [...Object.entries(chartData)]
     .sort((a, b) => leastDataFirst ? a[1] - b[1] : b[1] - a[1])
